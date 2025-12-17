@@ -7,6 +7,9 @@ import com.example.demo.service.Studentservice;
 public class Studentcontroller{
     @Autowired Studentservice ser;
     @PostMapping("/post")
+    public Studententity senddata(@RequestBody Studententity ent){
+        return ser.postdata(ent);
+    }
 
 
 
