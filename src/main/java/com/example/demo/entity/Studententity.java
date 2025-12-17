@@ -6,7 +6,17 @@ public class Studententity{
     private String email;
     private String pass;
     private Date date;
+    class Studententity{
 
+    }
+    class Studententity{
+        Integer rollno;
+        String name;
+        String email;
+        String pass;
+        Date date;
+        Studententity()
+    }
     public Integer getrollno(){
         return rollno;
     }
