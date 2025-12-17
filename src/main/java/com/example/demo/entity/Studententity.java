@@ -6,17 +6,7 @@ public class Studententity{
     private String email;
     private String pass;
     private Date date;
-    class Studententity{
-
-    }
-    class Studententity{
-        Integer rollno;
-        String name;
-        String email;
-        String pass;
-        Date date;
-        Studententity()
-    }
+    
     public Integer getrollno(){
         return rollno;
     }
@@ -46,5 +36,15 @@ public class Studententity{
     }
     public void setdate(Date date){
         this.date=date;
+    }
+    public Studententity(Integer rollno,String name,String email,String pass,Date date){
+            this.rollno=rollno;
+            this.name=name;
+            this.email=email;
+            this.pass=pass;
+            this.date=date;
+    }
+    public Studententity(){
+
     }
 }                
