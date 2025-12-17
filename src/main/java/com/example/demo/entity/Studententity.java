@@ -7,7 +7,7 @@ import jakarta.persistence.GenerationType;
 @Entity
 public class Studententity{
     @Id
-    @GeneratedValue(strategy=GenerationtType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer rollno;
 
     private String name;
