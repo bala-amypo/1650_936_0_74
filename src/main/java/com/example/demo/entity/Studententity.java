@@ -7,14 +7,34 @@ public class Studententity{
     private String pass;
     private Date date;
 
-    public Integer rollno(){
+    public Integer getrollno(){
         return rollno;
     }
-    public String name(){
+    public void setrollno(Integer rollno){
+        this.rollno=rollno;
+    }
+    public String getname(){
         return name;
     }
-    public String email(){
+    public void setname(String name){
+        this.name=name;
+    }
+    public String getemail(){
         return email;
     }
-    public String pass()
+    public void setemail(String email){
+        this.email=email;
+    }
+    public String getpass(){
+        return pass;
+    }
+    public void setpass(String pass){
+        this.pass=pass;
+    }
+    public Date getdate(){
+        return date;
+    }
+    public void setdate(Date date){
+        this.date=date;
+    }
 }                
