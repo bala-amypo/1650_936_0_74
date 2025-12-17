@@ -3,10 +3,11 @@ import java.util.Date;
 import jakarta.persistence.Entity;
 import jakarta.persistance.Id;
 import jakarta.persistance.GeneratedValue;
+import jakarta.persistance.GenerationtType;
 @Entity
 public class Studententity{
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationtType.IDENTITY)
     private Integer rollno;
 
     private String name;
