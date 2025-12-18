@@ -20,7 +20,7 @@ public class Studentserviceimpl implements Studentservice{
         return student.findAll();
      }
      @Override
-     public String deletedata(){
+     public String deletedata(int rollno){
         student.deleteById(rollno);
         return "Deleted successfully";
      }
