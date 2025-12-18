@@ -28,5 +28,11 @@ public class Studentserviceimpl implements Studentservice{
      public Studententity getdata(int rollno){
         return student.findById(rollno).orElse(null);
      }
+     @Override
+    public Studententity updatedata(int rollno,Studententity entity){
+        if(student.existsById){
+            entity.set
+        }
+    }
 
 }
