@@ -24,7 +24,7 @@ public class Studentserviceimpl implements Studentservice{
         student.deleteById(rollno);
         return "Deleted successfully";
      }
-
+     
 
 
 

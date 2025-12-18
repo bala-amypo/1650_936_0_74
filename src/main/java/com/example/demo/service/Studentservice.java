@@ -6,5 +6,5 @@ public interface Studentservice{
 
 List<Studententity>getalldata();
 String deletedata(int rollno);
-S
+Studententity getdata(int rollno);
 }
