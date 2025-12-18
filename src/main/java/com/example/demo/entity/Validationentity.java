@@ -17,10 +17,13 @@ public class Validationentity{
     @NotNull
     @Size(min=2,max=6,message="must be of 2 to 6 characters")
     private String username;
+    @NotNull(message="password mandatory")
     @Max(6)
     private String password;
     @Email(message="email not valid")
     private String email;
+    @Max(30)
+    @Positive
     private int age;
 
 }
