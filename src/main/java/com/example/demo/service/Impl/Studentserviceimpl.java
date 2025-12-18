@@ -13,6 +13,11 @@ public class Studentserviceimpl implements Studentservice{
        return student.save(stu);
 
     }
+    @Override
+     public List<Studententity>getalldata(){
+        return Student.findall
+     }
+
 
 
 }
