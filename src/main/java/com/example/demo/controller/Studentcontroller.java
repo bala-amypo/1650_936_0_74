@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.service.Studentservice;
 import com.example.demo.entity.Studententity;
 import org.springframework.web.bind.annotation.RequestBody;
+import java.util.List;
 @RestController
 public class Studentcontroller{
     @Autowired Studentservice ser;
@@ -14,7 +15,9 @@ public class Studentcontroller{
         return ser.postdata(stu);
     }
     @GetMapping("/get")
-    public 
+    public List<Studententity> getdata(){
+        return getalldata();
+    }
 
 
 
