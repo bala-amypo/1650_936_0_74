@@ -9,9 +9,9 @@ import com.example.demo.entity.Validationentity;
 
 @RestController
 public class Validationcontroller{
-    @Autowired Validservice va;
+    @Autowired Validservice service;
     @PostMapping("/postt")
     public Validationentity sendata(@Valid @RequestBody Validationentity val){
-        return va.posttdata(val);
+        return service.posttdata(val);
     }
 }
