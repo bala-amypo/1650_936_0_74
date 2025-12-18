@@ -48,11 +48,26 @@ public class Validationentity{
         return email;
     }
     
-    public void setpass(String pass){
-        this.pass=pass;
+    public void setpassword(String password){
+        this.password=password;
     }
-    public String getpass(){
-        return pass;
+    public String getpassword(){
+        return password;
+    }
+    public void setage(int age){
+        this.age=age;
+    }
+    public int getage(){
+        return age;
+    }
+    public Validationentity(Long id,
+    @NotNull
+    @Size(min=2,max=6,message="must be of 2 to 6 characters") String username,
+    @NotNull(message="password mandatory")@Size(max=6) String password,
+    @Email(message="email not valid") String email,
+    @Max(30)@Positive(message="age must be positive") int age){
+
+t
     }
     
 }
