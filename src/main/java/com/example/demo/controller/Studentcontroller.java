@@ -27,7 +27,7 @@ public class Studentcontroller{
     }
     @GetMapping("/getid/{rollno}")
     public Studententity getdataid(@PathVariable int rollno){
-        return ser.getdata(rollno);
+        return ser.getdata(rollno); 
     }
      
 
