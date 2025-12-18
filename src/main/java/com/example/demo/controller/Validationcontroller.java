@@ -4,5 +4,5 @@ public class Validationrepository{
     @Autowired Validservice va;
     @PostMapping("/postt")
     public Validationentity sendata(@RequestBody Validationentity val){
-        return va.postdata(stu);
+        return va.posttdata(val);
     }

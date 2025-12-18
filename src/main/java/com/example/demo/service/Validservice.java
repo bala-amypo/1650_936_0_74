@@ -1,4 +1,5 @@
 package com.example.demo.service;
+import com.example.demo.entity.Validationentity;
 public interface Validservice{
-    Validentity posttdata(Validentity val);
+    Validationentity posttdata(Validationentity val);
 }
