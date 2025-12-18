@@ -7,7 +7,7 @@ import jakarta.validation.constraint.NotNull;
 import jakarta.validation.constraint.Size;
 import jakarta.validation.constraint.Email;
 import jakarta.validation.constraint.Max;
-
+import jakarta.validation.constraint.Positive;
 
 @Entity
 public class Validationentity{
@@ -18,12 +18,41 @@ public class Validationentity{
     @Size(min=2,max=6,message="must be of 2 to 6 characters")
     private String username;
     @NotNull(message="password mandatory")
-    @Max(6)
+    @Size(max=6)
     private String password;
     @Email(message="email not valid")
     private String email;
     @Max(30)
-    @Positive
+    @Positive(message="age must be positive")
     private int age;
+    
 
+     public void setid(Long id){
+        this.id=id;
+    }
+    public Long getid(){
+        return id;
+    }
+   
+    public void setusername(String username){
+        this.username=username;
+    }
+     public String getusername(){
+        return username;
+    }
+    
+    public void setemail(String email){
+        this.email=email;
+    }
+    public String getemail(){
+        return email;
+    }
+    
+    public void setpass(String pass){
+        this.pass=pass;
+    }
+    public String getpass(){
+        return pass;
+    }
+    
 }
