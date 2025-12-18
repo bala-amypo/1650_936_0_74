@@ -67,7 +67,13 @@ public class Validationentity{
     @Email(message="email not valid") String email,
     @Max(30)@Positive(message="age must be positive") int age){
 
-t
+this.id=id;
+this.username=username;
+this.email=email;
+this.password=password;
+this.age=age;
     }
-    
+     public Validationentity(){
+        
+     }
 }
