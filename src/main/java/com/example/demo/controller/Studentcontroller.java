@@ -25,6 +25,8 @@ public class Studentcontroller{
         return ser.deletedata(rollno);
 
     }
+    @GetMapping("/getid/{id}")
+    public Studententity getdata
      
 
 
