@@ -1,10 +1,17 @@
 package com.example.demo.entity;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 @Entity
 public class Validationentity{
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
+    @Not
     private String username;
     private String password;
-    private Number age;
+    private String email;
+    private int age;
 
 }
