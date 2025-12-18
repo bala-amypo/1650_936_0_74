@@ -18,7 +18,7 @@ public class Validationentity{
     @Size(min=2,max=6,message="must be of 2 to 6 characters")
     private String username;
     @NotNull(message="password mandatory")
-    @Size(max=6)
+    @Size(min=2,max=6)
     private String password;
     @Email(message="email not valid")
     private String email;
@@ -63,7 +63,7 @@ public class Validationentity{
     public Validationentity(Long id,
     @NotNull
     @Size(min=2,max=6,message="must be of 2 to 6 characters") String username,
-    @NotNull(message="password mandatory")@Size(max=6) String password,
+    @NotNull(message="password mandatory")@Size(min=2,max=6) String password,
     @Email(message="email not valid") String email,
     @Max(30)@Positive(message="age must be positive") int age){
 
