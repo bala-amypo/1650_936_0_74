@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.service.Validservice;
 import com.example.demo.entity.Validationentity;
-// import com.example.demo.repository.Validationrepository;
 
 @RestController
 public class Validationcontroller{
