@@ -7,4 +7,5 @@ public interface Studentservice{
 List<Studententity>getalldata();
 String deletedata(int rollno);
 Studententity getdata(int rollno);
+Studententity updatedata(int rollno,Studententity entity);
 }
