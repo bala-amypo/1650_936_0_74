@@ -31,7 +31,9 @@ public class Studentcontroller{
         return ser.getdata(rollno); 
     }
     @PutMapping("/put/{rollno}")
-    public  
+    public Studententity putval(@PathVariable int rollno,@RequestBody Studententity entity){
+        return ser.updatedata(rollno,entity);
+    }
      
 
 
