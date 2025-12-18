@@ -47,9 +47,7 @@ public class Studententity{
     public void setdate(Date date){
         this.date=date;
     }
-    public Date getdate(){
-        return date;
-    }
+    
     public Studententity(Integer rollno,String name,String email,String pass,Date date){
             this.rollno=rollno;
             this.name=name;

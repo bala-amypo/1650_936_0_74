@@ -1,2 +1,6 @@
 package com.example.demo.service.Impl;
-public 
+public Validserviceimpl implements Validservice{
+    @Autowired Validationrepository vali;
+    @Override
+    
+}
