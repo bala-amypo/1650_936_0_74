@@ -4,6 +4,7 @@ import com.example.demo.entity.Studententity;
 import com.example.demo.repository.Studentrepository;
 import com.example.demo.service.Studentservice; 
 import org.springframework.stereotype.Service;
+import java.util.List;
 @Service
 public class Studentserviceimpl implements Studentservice{
     @Autowired Studentrepository student;
@@ -15,7 +16,7 @@ public class Studentserviceimpl implements Studentservice{
     }
     @Override
      public List<Studententity>getalldata(){
-        return Student.findall
+        return student.findAll();
      }
 
 
