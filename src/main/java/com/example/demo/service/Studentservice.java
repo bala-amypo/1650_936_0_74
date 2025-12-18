@@ -5,4 +5,5 @@ public interface Studentservice{
     Studententity postdata(Studententity stu);
 
 List<Studententity>getalldata();
+String deletedata(int rollno);
 }

@@ -18,6 +18,7 @@ public class Studentserviceimpl implements Studentservice{
      public List<Studententity>getalldata(){
         return student.findAll();
      }
+     
 
 
 
