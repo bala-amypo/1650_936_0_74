@@ -24,8 +24,8 @@ public class Studentserviceimpl implements Studentservice{
         student.deleteById(rollno);
         return "Deleted successfully";
      }
-     
-
-
+     @Override Studententity getdata(int rollno){
+        return student.findById(id);
+     }
 
 }
