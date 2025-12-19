@@ -15,4 +15,4 @@ public class ValidationServiceimpl implements ValidationService{
      public ValidationEntity getdata(int id){
         return validate.findById(id ).orElse(null);
      }
-}
+}                                                                                                 
