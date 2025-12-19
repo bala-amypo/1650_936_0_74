@@ -21,5 +21,5 @@ public class StudentId{
     private String stuid;
     @OneToOne
     @JoinColumn(name="student_id")
-    private Studentdetails student;
+    private StudentDetails student;
 } 
