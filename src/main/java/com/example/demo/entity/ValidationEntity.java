@@ -33,5 +33,8 @@ public class ValidationEntity{
   @Positive(message="Age must be positive")
    private int age;
 
+
+@PrePersist
+
  
 }
