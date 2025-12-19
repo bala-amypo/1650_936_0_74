@@ -9,7 +9,7 @@ import com.example.demo.service.StudentIdService;
 public class StudentDetailsServiceimpl implements StudentDetailsService{
   @Autowired StudentDetailsRepo stui;
   @Override
-   public StudentDetails postDattaa(StudentId st){
+   public StudentDetails postDatta(StudentDetails st){
              return stui.save(st);
       }
       
