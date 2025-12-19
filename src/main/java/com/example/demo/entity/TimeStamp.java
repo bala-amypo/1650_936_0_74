@@ -31,6 +31,8 @@ public class TimeStamp{
     }
     @PreUpdate
     public void Onupdate(){
+         LocalDateTime now=LocalDateTime.now();
+
         this.updatedAt=now;
     }
 }
