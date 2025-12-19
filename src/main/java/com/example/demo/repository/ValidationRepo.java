@@ -5,4 +5,4 @@ import com.example.demo.entity.ValidationEntity;
 
 public interface ValidationRepo extends JpaRepository<ValidationEntity,Long>{
       
-}
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
