@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 public class StudentId{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Integer id;
+    private Integer student_id;
     private String idno;
     private String stuid;
     @OneToOne
