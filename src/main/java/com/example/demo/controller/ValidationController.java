@@ -17,7 +17,7 @@ public class ValidationController{
       return va.postData(val);
   }
    @GetMapping("/getId/{id}")
-    public Studententity getdataid(@Valid @PathVariable Long id){
-        return va.getdata(id); 
+    public ValidationEntity getdataId(@Valid @PathVariable Long id){
+        return va.getData(id); 
     }
 }
