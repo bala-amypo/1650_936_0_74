@@ -1,40 +1,43 @@
 package com.example.demo.service.Impl;
-import org.springframework.beans.factory.annotation.Autowired;
-import com.example.demo.entity.Studententity;
-import com.example.demo.repository.Studentrepository;
-// import org.springframework.web.bind.annotation.Pathvariable;
-import com.example.demo.service.Studentservice; 
 import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.example.demo.entity.StudentEntity;
+import com.example.demo.repository.StudentRepo;
+import com.example.demo.service.StudentService;
 import java.util.List;
 @Service
-public class Studentserviceimpl implements Studentservice{
-    @Autowired Studentrepository student;
-    //save(),findAll(),findById(),deleteById(),existsById();
+public class StudentServiceimpl implements StudentService{
+        @Autowired StudentRepo student;
+        //save()
+        //findAll()
+        //findById()
+        //deleteById()
+        //existById()
     @Override
-    public Studententity postdata(Studententity stu){
-       return student.save(stu);
-
-    }
-    @Override
-     public List<Studententity>getalldata(){
-        return student.findAll();
-     }
-     @Override
-     public String deletedata(int rollno){
-        student.deleteById(rollno);
-        return "Deleted successfully";
-     }
-     @Override 
-     public Studententity getdata(int rollno){
-        return student.findById(rollno).orElse(null);
-     }
-     @Override
-    public Studententity updatedata(int rollno,Studententity entity){
-        if(student.existsById(rollno)){
-            student.setRollno(rollno);
+           public StudentEntity postData(StudentEntity stu){
+             return student.save(stu);
+         }
+         @Override
+         
+         public List<StudentEntity>getAllData(){
+         
+         return student.findAll();
+         }
+         @Override
+         public String deleteData(int id){
+          student.deleteById(id);
+          return "Deleted Successfully";
+         }
+         @Override
+         public StudentEntity getData(int id){
+          return student.findById(id).orElse(null);
+         }
+         @Override
+         public StudentEntity updateData(int id,StudentEntity entity){
+           if(student.existsById(id)){
+            entity.setId(id);
             return student.save(entity);
-        }
-        return null;
-    }
-
+           }
+           return null;
+         }
 }

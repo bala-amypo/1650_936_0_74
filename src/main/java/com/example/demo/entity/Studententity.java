@@ -9,19 +9,16 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 @Entity
 @Data
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-public class Studententity{
+public class StudentEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Integer rollno;
-
+    private Integer id;
     private String name;
     private String email;
-    private String pass;
+    private String password;
     private Date date;
-    
-   
-}                
+
+
+}
