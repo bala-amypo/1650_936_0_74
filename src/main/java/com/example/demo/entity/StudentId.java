@@ -17,5 +17,6 @@ public class StudentId{
     private Integer id;
     private String idno;
     private String stuid;
-    @
+    @OneToOne
+    @JoinColumn(name="")
 } 
