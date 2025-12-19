@@ -31,7 +31,7 @@ public class Studentserviceimpl implements Studentservice{
      @Override
     public Studententity updatedata(int rollno,Studententity entity){
         if(student.existsById(rollno)){
-            entity.setRollno(rollno);
+            student.setRollno(rollno);
             return student.save(entity);
         }
         return null;
